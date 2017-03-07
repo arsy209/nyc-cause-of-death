@@ -9,7 +9,4 @@ class Death
     @count = args.fetch('count', "Empty")
     @percent = args.fetch('percent', "Empty")
   end
-
-
-
 end

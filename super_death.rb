@@ -1,7 +1,6 @@
-require 'pry'
-
 class SuperDeath
   attr_reader :deaths
+
   def initialize(args={})
     @deaths = args.fetch(:deaths, [])
   end
@@ -14,11 +13,8 @@ class SuperDeath
     deaths.select {|death| death.sex == sex.upcase}
   end
 
-
   def search_by_year(year)
     count = deaths.select {|death| year == death.year}
     count.length
   end
-
-
 end
